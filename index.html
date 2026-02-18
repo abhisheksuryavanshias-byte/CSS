@@ -2,30 +2,46 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=
-    , initial-scale=1.0">
-    <title>Document</title>
+    <title>Professional Navbar</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <!-- sematic tags= header,nav,main,section,footer -->
 
-<header id="navbar">
+<header>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <span>📞7773017596</span>
+        <span>🕒 Mon–Sat 9AM–6PM</span>
+    </div>
+
+    <!-- Main Navbar -->
+    <nav class="navbar">
+        <div class="logo">S</div>
+
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Jobs</a></li>
+            <li><a href="#">Companies</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+
+        <div class="nav-right">
+            <button class="search-btn">Search</button>
+            <button class="login-btn">Login</button>
+            <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        </div>
+    </nav>
 
 </header>
 
-
-<!-- <div id="box"></div> -->
- <div class="base">  <ul>
-    
- </ul>
- </div>
-
-
-
-
-
-
+<script>
+function toggleMenu(){
+    document.getElementById("navLinks").classList.toggle("active");
+}
+</script>
 
 </body>
 </html>
