@@ -1,61 +1,83 @@
-
-
-body{
-
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     
 }
 
-
-
-
-
-p{
-
-color: #5c0404;
-background-color: rgb(91, 91, 236);
-text-align: center;
-font-size: 40px;
-text-decoration: underline;
-text-transform: lowercase;
- font-style: italic;
-}
-#abhi {color: aliceblue; background-color: #5c0404;
-text-align: center;font: size 30px;
-text-decoration: indianred;
-font-style: initial;
-font-weight: 100;
-
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #111;
+    color: white;
+    padding: 15px 40px;
 }
 
-
-.kishan {
- background-color: blueviolet;
- /* padding: 10px; */
-margin: 20px;  
-/* padding: left 5%;  */
-padding-left: 20px;
-  border-radius: 20px;
-
-
-
-
-}
-.fan{
-  
-  width: 250px;
-  height: 250px;
-  border-radius: 80%;
-  border: 1px solid black;
-  margin: auto;
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
 }
 
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
 
-.disha{
-height: 500px;
-width: 500px;
-border: 1px solid black;
-margin: auto;
-border-top-right-radius: 20px;
-border-bottom-left-radius: 20px;
+/* Hero Section */
+.hero {
+    height: 90vh;
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    text-align: center;
+}
 
+.hero button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    border: none;
+    background: black;
+    color: white;
+    cursor: pointer;
+}
+
+/* About */
+.about {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+/* Skills */
+.skills {
+    padding: 60px 20px;
+    background: #f4f4f4;
+    text-align: center;
+}
+
+.skill-box {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.card {
+    padding: 20px 30px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    border-radius: 10px;
+}
+
+/* Footer */
+footer {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 15px;
 }
